@@ -1,0 +1,10 @@
+title: "Sugar Bear's Soft Spot"
+description: "A Fuzzy Calculus bedtime story about little comforts, big dreams, and making a soft place for tomorrow's Bear."
+author: Paul Carver Tiffany III
+lang: en-US
+url: https://paultiffany.github.io
+baseurl: /Sugar-Bear-Soft-Spot
+repository: PaulTiffany/Sugar-Bear-Soft-Spot
+theme: jekyll-theme-primer
+plugins:
+  - jekyll-seo-tag
