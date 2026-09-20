@@ -1,0 +1,75 @@
+name: "🐾 Picture lesson"
+description: Look at a bedtime picture, notice a feeling or change, and share what you saw.
+title: "[Pawprint] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Sugar Bear has a question
+
+        There may be more than one honest answer. Look first; name what you noticed second.
+
+        **Grown-ups:** Please post for young children. Do not include a child's name, face, location, school, or other personal details.
+  - type: dropdown
+    id: page
+    attributes:
+      label: Which page are you exploring?
+      options:
+        - "1 — Little bed, big dreams"
+        - "2 — Tangled blanket"
+        - "3 — Hard pillow"
+        - "4 — Bumpy dream"
+        - "5 — Windy dream"
+        - "6 — One more thing"
+        - "7 — Grumbly morning"
+        - "8 — A soft place"
+        - "9 — Make the bed"
+        - "10 — Time to rest"
+        - "11 — Sailing over Berry Hill"
+        - "12 — Ready for the day"
+        - "13 — Tomorrow’s Bear"
+        - "14 — Big Bear Notes"
+    validations:
+      required: true
+  - type: textarea
+    id: noticed
+    attributes:
+      label: What did you notice?
+      description: A word, a color, a feeling, a difference, or anything else.
+      placeholder: "I noticed..."
+    validations:
+      required: true
+  - type: dropdown
+    id: confidence
+    attributes:
+      label: How sure are you?
+      description: There is no grade. It is okay to be unsure.
+      options:
+        - "Not sure yet"
+        - "A tiny bit"
+        - "Sort of"
+        - "Very much"
+    validations:
+      required: true
+  - type: textarea
+    id: stayed
+    attributes:
+      label: What stayed the same?
+      placeholder: "Even though something changed..."
+  - type: textarea
+    id: another
+    attributes:
+      label: What might another friend feel?
+      placeholder: "Another friend might..."
+  - type: textarea
+    id: next
+    attributes:
+      label: What small thing could Sugar Bear try next?
+      placeholder: "He could..."
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Gentle posting promise
+      options:
+        - label: "I am an adult or eligible account holder, and I will not post a child's personal information."
+          required: true

@@ -1,0 +1,56 @@
+name: Grow Wonder Garden Labels
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/grow-garden-labels.yml"
+
+permissions:
+  issues: write
+
+jobs:
+  labels:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create gentle labels
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const labels = [
+              ['how-much', 'F9D97D', 'How strongly does the description fit?'],
+              ['another-observer', '7EC8E3', 'Another honest viewpoint may help.'],
+              ['what-changed', '6F42C1', 'Look for a difference or pawprint.'],
+              ['still-fuzzy', 'BFDADC', 'Uncertainty is being preserved, not failed.'],
+              ['same-bear', 'D99A54', 'A question about identity across change.'],
+              ['promise-may-change', 'D73A4A', 'The proposal may alter an agreement or authority boundary.'],
+              ['ready-to-share', '2EA44F', 'A human believes this is ready to show others.'],
+              ['needs-a-picture', 'FBCA04', 'A picture could make the question easier to explore.']
+            ];
+
+            for (const [name, color, description] of labels) {
+              try {
+                await github.rest.issues.getLabel({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  name
+                });
+                await github.rest.issues.updateLabel({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  name,
+                  color,
+                  description
+                });
+              } catch (error) {
+                if (error.status !== 404) throw error;
+                await github.rest.issues.createLabel({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  name,
+                  color,
+                  description
+                });
+              }
+            }
