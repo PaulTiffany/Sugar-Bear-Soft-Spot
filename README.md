@@ -31,22 +31,12 @@
 
 [![Big Bear Notes for curious grown-ups. Pictures connect a pillow to an adventure, a familiar village to imagined possibilities, a resting bear to a dream sailboat, and making the bed to caring for tomorrow. Text: Small changes can shape a whole adventure. Familiar places can become new possibilities. Dreaming and doing are different. Rest is part of caring for tomorrow.](14-big-bear-notes.png)](14-big-bear-notes.png)
 
-| Story thought | Big Bear connection |
+| Story question | Big Bear connection |
 | --- | --- |
-| Small changes can shape a whole adventure. | Afferent input: signals arriving from the body help shape experience. |
-| Familiar places can become new possibilities. | Coherent exploration around a retained reference: the story's connection to TTCS. |
-| Dreaming and doing are different. | Internal exploration and external action have different boundaries. |
-| Rest is part of caring for tomorrow. | Making a soft place is a small act of care for a future self. |
-
-The bedding-to-dream connections are story metaphors, not a promise that a particular pillow produces a particular dream. Sugar Bear **remembered no dreams** after his late night; that does not mean he did not dream. The story connects his grumbly morning to too little rest.
-
-The grown-up sources behind the story:
-
-- [*Principia Symbolica*, Book IV: Test-Time Coherent Sampling](https://paultiffany.github.io/Principia-Symbolica/atlas/book-iv-de-identitate-symbolica-et-emergentia/page-4/) defines TTCS as coherent sampling within a drift bound around a retained reference. Its symbolic simulation can explore possibilities before external action.
-- Paul Carver Tiffany III, *Spontaneous Attack: Test-Time Coherent Sampling, Sleep, and Agency Gating Under Continuous Active Inference* (working draft supplied for this book, September 19, 2026), proposes a connection between protected internal exploration and sleep. The biological explanation is a hypothesis.
-- [*Dream-RSI*](https://arxiv.org/html/2609.14858v1) evaluates alternative exploration policies through recorded discovery trees, then uses a selected policy for further exploration. Its “dreaming” is computational replay; it does not establish a theory of biological dreams.
-
-The earlier [hard-pillow illustration](hard-pillow-alternate.png) is retained as an alternate. The later version appears on page 3.
+| What is my body telling me? | Sensation & comfort |
+| Can familiar things become something new? | Memory & imagination |
+| Is dreaming the same as doing? | Thoughts & actions |
+| How can I help tomorrow's Bear? | Rest & care |
 
 **Same ideas. Kinder story.**
 
