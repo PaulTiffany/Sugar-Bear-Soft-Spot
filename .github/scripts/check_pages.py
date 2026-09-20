@@ -60,7 +60,9 @@ def main():
     check(book.notes_image_hidden, "Big Bear Notes must start inside closed details.")
     check(book.canonical == page_url, "Canonical URL must point to the Pages book.")
     check(book.meta.get("og:url") == page_url, "Open Graph URL must point to the Pages book.")
-    check(book.meta.get("og:title") == "Sugar Bear's Soft Spot", "Sharing title is missing or incorrect.")
+    # Jekyll's typography may turn the title's apostrophe into a curly one.
+    title = book.meta.get("og:title", "").replace("\u2019", "'")
+    check(title == "Sugar Bear's Soft Spot", f"Sharing title is missing or incorrect: {title!r}.")
     check(bool(book.meta.get("og:description")), "Sharing description is missing.")
     check(book.meta.get("twitter:card") == "summary_large_image", "Twitter card must use the large image.")
     for key in ("og:image", "twitter:image"):
